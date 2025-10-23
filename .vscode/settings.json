@@ -1,0 +1,17 @@
+{
+	"python.defaultInterpreterPath": "/usr/local/bin/python",
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.black-formatter",
+		"editor.rulers": [
+			88,
+			79
+		],
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "editor.formatOnSave": true
+	},
+    "isort.args": ["--profile", "black"],
+    "mypy-type-checker.args": ["ignore_missing_imports=True"],
+	"flake8.args": ["--max-line-length=88"]
+}
